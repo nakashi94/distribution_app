@@ -2,7 +2,8 @@ import React, { FC } from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import TopPage from './components/TopPage';
+import TopHeader from './components/topPage/TopHeader';
+import TopPage from './pages/TopPage';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
