@@ -21,7 +21,7 @@ const ResultImageList: FC = () => {
 
   return (
     <div>
-      
+      <h1>hello</h1>
     </div>
   )
 }
