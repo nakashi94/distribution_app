@@ -1,4 +1,4 @@
-import React, {FC} from 'react';
+import React, {FC, useState} from 'react';
 import {createStyles, makeStyles} from '@material-ui/core/styles';
 import {Paper, IconButton, InputBase} from '@material-ui/core';
 import SearchIcon from '@material-ui/icons/Search';
@@ -25,6 +25,12 @@ const useStyle = makeStyles(() =>
 
 const TopMain: FC = () => {
     const classes = useStyle();
+    const [keyWord, setKeyWord] = useState("");
+
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        setKeyWord(e.target.value);
+    }
+
     return (
         <div className={classes.background}>
             <Paper className={classes.paper}>
@@ -33,6 +39,7 @@ const TopMain: FC = () => {
                 </IconButton>
                 <InputBase
                     placeholder="無料素材を検索"
+                    onChange={handleChange}
                 />
             </Paper>
         </div>
