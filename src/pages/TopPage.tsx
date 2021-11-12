@@ -1,9 +1,10 @@
-import React, {FC} from 'react'
+import React, {FC} from 'react';
+import TopHeader from '../components/TopHeader';
 
 const TopPage: FC = () => {
     return (
         <div>
-            <h2>This is a react component.</h2>
+            <TopHeader />
         </div>
     )
 }
