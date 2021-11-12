@@ -4,7 +4,7 @@ import {AppBar, Toolbar} from '@material-ui/core'
 const TopHeader: FC = () => {
     return (
         <div>
-            <AppBar>
+            <AppBar position='static'>
                 <Toolbar>
                     <h1>Title</h1>
                 </Toolbar>
